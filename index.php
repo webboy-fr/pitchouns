@@ -4,4 +4,4 @@
     <p>C'est parti !</p>
     
       <!-- lien vers welcome.html -->
-      <?= "<a  href='welcome.html'>Rapport de faisabilité</a>" ?>
+    <a  href='welcome.html'>Rapport de faisabilité</a>
