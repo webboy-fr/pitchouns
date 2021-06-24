@@ -41,9 +41,14 @@ $server_output = curl_exec ($ch);
 curl_close ($ch);
 
 //print response
-echo "$params <br>";
 
-echo $test;
+echo "les paramètres envoyés :<br>";
+echo "$params <br><br>";
+
+echo "le debut de l'url envoyée :<br>";
+echo "$test<br><br>";
+
+echo "les résultats obtenus :<br>";
 echo "<pre>";
 var_dump($server_output);
 echo "</pre>";
