@@ -11,3 +11,5 @@
 <span>API pour jooble :</span>
 <a href="jooble.php">Tests sur l'api de jooble</a>
 
+
+<footer>Réalisé en mode projet grace a github par la classe DWWM8 de l'afpa</footer>
