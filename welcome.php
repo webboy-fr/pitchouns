@@ -42,6 +42,28 @@
             <li>Hébergeur de l’offre </li>
         </ul>
     </div>
+    <br>
+    <div>
+        <h1>Test d'appel de données avec le site : La bonne alternance</h1>
+        <!-- Pour cette API nous avons besoin de savoir : le code romes du travail recherché, de la latitude et longitude de la ville, nombre de kilomètre de la zone de recherche et du code insee de la ville -->
+        <!-- On pourrait donc rajouter un select afin de permettre une recherche  -->
+        <!-- TO DO select -->
+    <?php 
+        //on fait appel à l'API avec l'url, on récupère le json, et on en fait un tableau qui sera exploitable
+        $url = "https://labonnealternance.apprentissage.beta.gouv.fr/api/V1/jobs?romes=M1805&latitude=43.604652&longitude=1.444209&radius=50&insee=31555&sources=offres&caller=pitchounes";
+        $json = file_get_contents($url);
+        $data = json_decode($json, true, 512, JSON_OBJECT_AS_ARRAY);?>
+        <!-- On met en forme les données récupérés -->
+        <?php foreach ($data["peJobs"]["results"] as $job) : ?>
+            <h2><?= $job["title"] ?></h2>
+            <p>Entreprise : <?= (isset($job["company"]["name"])) ? $job["company"]["name"] : "Non Renseigné" ?></p>
+            <p>Date de création de l'offre : <?= $job["job"]["creationDate"] ?></p>
+            <p>Lieu : <?= $job["place"]["city"] ?></p>
+            <p>Description : <?= $job["job"]["description"] ?></p>
+            <p>Type de contrat : <?= $job["job"]["contractType"] ?> : <?= $job["job"]["contractDescription"] ?></p>
+            <p>Lien vers l'offre : <a target="_blank" href='<?= $job["url"] ?>'><?= $job["url"] ?></a></p>
+        <?php endforeach ?>
+    </div>
 </body>
 
 </html>

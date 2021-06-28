@@ -5,7 +5,10 @@
     <p>C'est parti !</p>
     
       <!-- lien vers welcome.html -->
-    <a  href='welcome.html'>Rapport de faisabilité</a>
+
+    <a  href='welcome.php'>Rapport de faisabilité</a>
+
+   
 <br>
 <h2>Groupe meteojobs </h2>
 <span>API pour jooble :</span>
@@ -13,3 +16,4 @@
 
 
 <footer>Réalisé en mode projet grace a github par la classe DWWM8 de l'afpa</footer>
+
