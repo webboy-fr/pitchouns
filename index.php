@@ -8,7 +8,7 @@
   <style>
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
   </style> 
-  <title>Document</title>
+  <title>Accueil</title>
 </head>
 <?require "nav.php"?>
 <br>
@@ -37,7 +37,7 @@
     </tr>
     <tr>
       <td>Indeed</td>
-      <td><img src="img/orange.png"></td>
+      <td><img src="img/redcross.png"></td>
     </tr>
   </tbody>
 </table><br>
