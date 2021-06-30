@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <?require "nav.php"?>
-<body style="background-color: #CDE4F5 ;">
+<body style="background-color: #CDE4F5;">
 <br><br><br>
 <form action="" method="post">
     <input type="text" name="metier">

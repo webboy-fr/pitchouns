@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <? require "nav.php" ?>
@@ -52,18 +55,49 @@
         </div>
     </div>
 
-    <div class="col-8 m-auto text-justify bg-warning p-3">
-        <h3>Bilan :</h3>
+    <div class="col-8 m-auto text-justify bg-warning p-3 d-flex align-items-center">
 
-        <p>Récupérer des données exploitables sur Indeed est gratuit, mais cepandant complexe par manque de documentation claire
-            ainsi que par le nombre d'étapes à effectuer pour y parvenir</p>
-        <p>Lors de notre tentative de récupération des données nous avons passé les deux premières étapes sans problème.
-            La dernière n’a pu aboutir. Après une longue attente, le service client d’Indeed nous a répondu que pour le moment
-            il n’était pas possible d’accéder à l’API car elle a été supprimée. Indeed est actuellement en train de reconfigurer
-            les comptes éditeurs pour y remédier . Nous n’avons aucune information du temps que cela prendra pour que l’API redevienne disponible.
-        </p>
+        <div class="col-8">
+            <h3>Bilan :</h3>
+
+            <p>Récupérer des données exploitables sur Indeed est gratuit, mais cepandant complexe par manque de documentation claire
+                ainsi que par le nombre d'étapes à effectuer pour y parvenir</p>
+            <p>Lors de notre tentative de récupération des données nous avons passé les deux premières étapes sans problème.
+                La dernière n’a pu aboutir. Après une longue attente, le service client d’Indeed nous a répondu que pour le moment
+                il n’était pas possible d’accéder à l’API car elle a été supprimée. Indeed est actuellement en train de reconfigurer
+                les comptes éditeurs pour y remédier . Nous n’avons aucune information du temps que cela prendra pour que l’API redevienne disponible.
+            </p>
+        </div>
+
+        <div class="col-4" id="contact">
+            
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn" data-toggle="modal" data-target="#exampleModalCenter">
+            <img src="img/mailindeed.png" style="width: 200px;">
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Mail d'Indeed</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div><img src="img/mailindeed.png" style="width: 450px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
     </div>
-
 
 </body>
 

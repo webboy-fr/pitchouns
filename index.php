@@ -37,7 +37,7 @@
     </tr>
     <tr>
       <td>Indeed</td>
-      <td><img src="img/orange.png"></td>
+      <td><img src="img/redcross.png"></td>
     </tr>
   </tbody>
 </table><br>
